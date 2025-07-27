@@ -82,14 +82,14 @@ public class collectionss {
         System.out.println(ad.pollFirst());
         System.out.println(ad.peekLast());
         System.out.println(ad);
-   */
+   
 
    //sets in collections
          
         Set<Integer> dp =  new HashSet<>();
 
-        // set me kya hota hai element unque hota hai 
-        // lekin jab Hashset banate hai to element kisibhi order me 
+        // set me kya hota hai element unique hota hai 
+        // lekin jab Hashset banate hai to element kisi bhi order me 
         // print ho skte hai
         dp.add(10);
         dp.add(20);
@@ -126,6 +126,38 @@ public class collectionss {
            // dk.add(5);
             dk.add(5);
         System.out.println(dk);
+        */
+
+        //+++++++++++++++++ Map ++++++++++++++++++++++++++
+
+        Map<Integer , String > student = new HashMap<>();
+
+        student.put(1, "Deepak Kumar");
+        student.put(2, "Snatosh Orone");
+        student.put(3, "Alok Maurya");
+        student.put(3, "Abhay Kumar");
+        student.put(4, "Rahul patel");
+        student.put(4, "Ajay Maurya");
+        
+
+         // if(!student.containsKey. )
+        System.out.println(student);
+
+        //  aur yadi hame Name print karana hai to integer ki jagah par String lena padega
+        // keyset ki jagh par values lena pdega
+        for(Integer rollNumner : student.keySet())
+        {
+            System.out.println(rollNumner);
+        }
+
+        // yadi hame dono print krana hai tab ke liye
+        
+        for(Map.Entry<Integer, String> me : student.entrySet())
+        {
+            System.out.println(me.getKey());
+            System.out.println(me.getValue());
+        }
+
     }
     
 }
