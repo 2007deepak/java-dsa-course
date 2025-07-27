@@ -35,7 +35,7 @@ public class collectionss {
 
         System.out.println(S);
 
-     */
+     
        // < ye yah bata raha hai ki hamne is Queue me integere type ka value addn kar rahe hai >
         
         Queue<Integer> q = new LinkedList<>();
@@ -51,6 +51,20 @@ public class collectionss {
         q.poll();
         System.out.println(q);
 
-        
+        */
+        Queue<Integer> pq = new PriorityQueue<>();
+
+        pq.offer(5);
+        pq.offer(60);
+        pq.offer(70);
+        pq.offer(40);
+        pq.offer(50);
+        System.out.println(pq);
+
+        pq.poll();
+
+        System.out.println(pq);
+
+
     }
 }
