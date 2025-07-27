@@ -65,7 +65,7 @@ public class collectionss {
 
         System.out.println(pq);
 
-        */
+      
 
         ArrayDeque<Integer> ad = new ArrayDeque<>();
         ad.offer(10);
@@ -82,6 +82,50 @@ public class collectionss {
         System.out.println(ad.pollFirst());
         System.out.println(ad.peekLast());
         System.out.println(ad);
+   */
 
+   //sets in collections
+         
+        Set<Integer> dp =  new HashSet<>();
+
+        // set me kya hota hai element unque hota hai 
+        // lekin jab Hashset banate hai to element kisibhi order me 
+        // print ho skte hai
+        dp.add(10);
+        dp.add(20);
+        dp.add(30);
+        dp.add(10);
+        dp.add(10);
+        dp.add(5);
+        dp.add(5);
+        System.out.println(dp);
+
+            
+        Set<Integer> ap =  new LinkedHashSet<>();
+
+        // Lekin jab ham LinkedhashSet banate hai tho ham jis order me 
+        // element preserve karate hai  usi order me print  hota hai hai
+            ap.add(10);
+            ap.add(20);
+            ap.add(30);
+           // ap.add(10);
+            //ap.add(10);
+           // ap.add(5);
+            ap.add(5);
+        System.out.println(ap);
+
+
+         Set<Integer> dk =  new TreeSet<>();
+        
+         // Aur TreeSet me order sorted ho jate hai
+            dk.add(10);
+            dk.add(20);
+            dk.add(30);
+           // dk.add(10);
+            //dk.add(10);
+           // dk.add(5);
+            dk.add(5);
+        System.out.println(dk);
     }
+    
 }
